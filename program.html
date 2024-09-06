@@ -1,191 +1,222 @@
 <html>
-    <head>
-      <title>Programs</title>
-        <style>
-            /* General Page Styles */
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f0f0f5; /* Light background for contrast */
-            }
+<head>
+  <title>Programs</title>
+  <style>
+      /* General Page Styles */
+      body {
+          font-family: 'Poppins', sans-serif; /* Modern and sleek font */
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f9; /* Soft light background for elegance */
+          color: #333;
+      }
 
-            h1, h2, p {
-                margin: 0;
-                padding: 0;
-            }
+      h1, h2, p {
+          margin: 0;
+          padding: 0;
+      }
 
-            a {
-                text-decoration: none;
-            }
+      a {
+          text-decoration: none;
+      }
 
-            /* Programs Overview Section */
-            .programs-overview {
-                background-color: #ffebcc; /* Light orange background */
-                padding: 2em;
-            }
+      /* Programs Overview Section */
+      .programs-overview {
+          background-color: #fff; /* White background for clarity */
+          padding: 3em 2em;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for premium feel */
+          border-radius: 10px; /* Rounded corners for modern look */
+          max-width: 1200px;
+          margin: 0 auto; /* Center content */
+      }
 
-            .programs-overview h1 {
-                color: #070606; /* Bright orange for main heading */
-                font-weight: bold;
-                text-align: center;
-                margin-bottom: 1em;
-                
-            }
+      .programs-overview h1 {
+          color: #004085; /* Deep, premium blue for heading */
+          font-weight: 700;
+          text-align: center;
+          margin-bottom: 1.5em;
+          font-size: 2.5rem;
+      }
 
-            .programs-overview ul {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-            }
+      .programs-overview ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 2em; /* Increased gap for cleaner spacing */
+      }
 
-            .programs-overview li {
-                margin-bottom: 30px;
-                border-left: 5px solid #ff9933; /* Left border for list items */
-                padding-left: 15px;
-            }
+      .programs-overview li {
+          padding: 20px;
+          border-left: 8px solid #ff9933; /* Thicker left border */
+          background-color: #fefefe;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Soft shadow */
+          border-radius: 8px;
+          transition: transform 0.3s ease; /* Hover transition for interaction */
+      }
 
-            .programs-overview h2 {
-                color: #333399; /* Deep blue for subheadings */
-                font-weight: bold;
-                font-size: 1.5em;
-                margin-bottom: 0.5em;
-            }
+      .programs-overview li:hover {
+          transform: translateY(-10px); /* Lift on hover for premium interaction */
+      }
 
-            .programs-overview p {
-                color: #333; /* Darker text for descriptions */
-                font-size: 1.1em;
-                font-family: 'Times New Roman', Times, serif;
-            }
+      .programs-overview h2 {
+          color: #004085;
+          font-weight: 600;
+          font-size: 1.75rem;
+          margin-bottom: 0.5em;
+      }
 
-            .learn-more {
-                background-color: #ff6600; /* Bright orange button */
-                color: #fff;
-                padding: 10px 20px;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                display: inline-block;
-                margin-top: 10px;
-            }
+      .programs-overview p {
+          color: #666; /* Slightly muted color for text */
+          font-size: 1.1rem;
+          line-height: 1.6;
+      }
 
-            .learn-more:hover {
-                background-color: #cc5200; /* Darker orange on hover */
-            }
+      .learn-more {
+          background-color: #007bff; /* Sleek blue button */
+          color: #fff;
+          padding: 10px 25px;
+          border: none;
+          border-radius: 30px;
+          cursor: pointer;
+          display: inline-block;
+          margin-top: 10px;
+          font-weight: 500;
+          transition: background-color 0.3s ease;
+      }
 
-            /* Program Details Section */
-            .program-details {
-                background-color: #e6f2ff; /* Light blue background for contrast */
-                padding: 2em;
-                margin-top: 2em;
-                font-family: 'Times New Roman', Times, serif;
-            }
+      .learn-more:hover {
+          background-color: #0056b3; /* Darker on hover */
+      }
 
-            .program-details h1 {
-                color: #003366; /* Deep blue for headings */
-                font-weight: bold;
-                text-align: center;
-                margin-bottom: 1em;
-            }
+      /* Program Details Section */
+      .program-details {
+          background-color: #f9fafb; /* Soft background for details section */
+          padding: 3em 2em;
+          margin-top: 3em;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Soft shadow */
+          border-radius: 10px;
+          max-width: 1200px;
+          margin: 0 auto;
+      }
 
-            .program-details h2 {
-                color: #0099cc; /* Lighter blue for subheadings */
-                font-weight: bold;
-                margin-bottom: 0.5em;
-                font-family: Georgia, serif;
-            }
+      .program-details h1 {
+          color: #003366;
+          font-weight: 700;
+          text-align: center;
+          margin-bottom: 1.5em;
+          font-size: 2.5rem;
+      }
 
-            .program-details ul {
-                list-style: disc;
-                margin-left: 20px;
-                margin-bottom: 1.5em;
-            }
+      .program-details h2 {
+          color: #006699;
+          font-weight: 600;
+          margin-bottom: 0.5em;
+          font-size: 1.75rem;
+      }
 
-            .program-details li {
-                margin-bottom: 10px;
-                color: #333; /* Dark text for list items */
-            }
+      .program-details ul {
+          list-style: none;
+          margin-left: 0;
+          margin-bottom: 1.5em;
+          padding-left: 1em;
+      }
 
-            .apply-now {
-                background-color: #339933; /* Bright green for 'Apply Now' */
-                color: #fff;
-                padding: 10px 20px;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                display: inline-block;
-                margin-top: 20px;
-            }
+      .program-details li {
+          margin-bottom: 10px;
+          font-size: 1.2rem;
+          color: #444;
+      }
 
-            .apply-now:hover {
-                background-color: #267326; /* Darker green on hover */
-            }
+      .apply-now {
+          background-color: #28a745; /* Bright green button */
+          color: #fff;
+          padding: 12px 30px;
+          border: none;
+          border-radius: 30px;
+          cursor: pointer;
+          font-weight: 500;
+          font-size: 1.1rem;
+          transition: background-color 0.3s ease;
+          display: block;
+          margin: 20px auto;
+          text-align: center;
+      }
 
-            /* Responsive Design */
-            @media (max-width: 768px) {
-                .programs-overview, .program-details {
-                    padding: 1em;
-                }
-            }
-        </style>
-    </head>
+      .apply-now:hover {
+          background-color: #218838; /* Darker green on hover */
+      }
 
-    <body>
-        <!-- Degree Programs Overview Page -->
-        <section class="programs-overview">
-            <h1>External Degree Programs</h1>
-            <ul>
-                <li>
-                    <h2>Bachelor of Business Administration (BBA)</h2>
-                    <p>A 3-year undergraduate degree program that covers the fundamentals of business administration.</p>
-                    <a href="#" class="learn-more">Learn More</a>
-                </li>
-                <li>
-                    <h2>Master of Business Administration (MBA)</h2>
-                    <p>A 2-year postgraduate degree program that focuses on advanced business management techniques.</p>
-                    <a href="#" class="learn-more">Learn More</a>
-                </li>
-                <li>
-                    <h2>Bachelor of Science in Information Technology (BSIT)</h2>
-                    <p>A 3-year undergraduate degree program that covers the basics of information technology.</p>
-                    <a href="#" class="learn-more">Learn More</a>
-                </li>
-            </ul>
-        </section>
+      /* Responsive Design */
+      @media (max-width: 768px) {
+          .programs-overview, .program-details {
+              padding: 2em 1.5em;
+          }
 
-        <!-- Detailed Program Page -->
-        <section class="program-details">
-            <h1>Bachelor of Business Administration (BBA)</h1>
-            <h2>Program Structure</h2>
-            <ul>
-                <li>Duration: 3 years</li>
-                <li>Courses: 12 core courses, 6 elective courses</li>
-                <li>Credits: 120 credits</li>
-            </ul>
+          .programs-overview ul {
+              gap: 1.5em; /* Reduce gap on smaller screens */
+          }
+      }
+  </style>
+</head>
 
-            <h2>Eligibility Criteria</h2>
-            <ul>
-                <li>Age: 18 years or above</li>
-                <li>Education: High school diploma or equivalent</li>
-                <li>Language: English proficiency</li>
-            </ul>
+<body>
+    <!-- Degree Programs Overview Page -->
+    <section class="programs-overview">
+        <h1>External Degree Programs</h1>
+        <ul>
+            <li>
+                <h2>Bachelor of Business Administration (BBA)</h2>
+                <p>A 3-year undergraduate degree program that covers the fundamentals of business administration.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </li>
+            <li>
+                <h2>Master of Business Administration (MBA)</h2>
+                <p>A 2-year postgraduate degree program that focuses on advanced business management techniques.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </li>
+            <li>
+                <h2>Bachelor of Science in Information Technology (BSIT)</h2>
+                <p>A 3-year undergraduate degree program that covers the basics of information technology.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </li>
+        </ul>
+    </section>
 
-            <h2>Fees and Payment Options</h2>
-            <ul>
-                <li>Program fee: rs.1300,000</li>
-                <li>Payment options: Installment plans, scholarships available</li>
-            </ul>
+    <!-- Detailed Program Page -->
+    <section class="program-details">
+        <h1>Bachelor of Business Administration (BBA)</h1>
+        <h2>Program Structure</h2>
+        <ul>
+            <li>Duration: 3 years</li>
+            <li>Courses: 12 core courses, 6 elective courses</li>
+            <li>Credits: 120 credits</li>
+        </ul>
 
-            <h2>Learning Methods</h2>
-            <ul>
-                <li>Online lectures</li>
-                <li>Downloadable resources</li>
-                <li>Exams: Online proctored exams</li>
-            </ul>
+        <h2>Eligibility Criteria</h2>
+        <ul>
+            <li>Age: 18 years or above</li>
+            <li>Education: High school diploma or equivalent</li>
+            <li>Language: English proficiency</li>
+        </ul>
 
-            <h2>Career Prospects and Job Opportunities</h2>
-            <p>Graduates can pursue careers in business management, marketing, finance, and more.</p>
-            <p align="center"><a href="bit.html" class="apply-now">Apply Now</a></p>
-        </section>
-    </body>
+        <h2>Fees and Payment Options</h2>
+        <ul>
+            <li>Program fee: Rs. 1,300,000</li>
+            <li>Payment options: Installment plans, scholarships available</li>
+        </ul>
+
+        <h2>Learning Methods</h2>
+        <ul>
+            <li>Online lectures</li>
+            <li>Downloadable resources</li>
+            <li>Exams: Online proctored exams</li>
+        </ul>
+
+        <h2>Career Prospects and Job Opportunities</h2>
+        <p>Graduates can pursue careers in business management, marketing, finance, and more.</p>
+        <a href="bit.html" class="apply-now">Apply Now</a>
+    </section>
+</body>
 </html>
